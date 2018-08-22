@@ -1,0 +1,55 @@
+page-book-detail {
+
+    .header{
+        margin: 20px 20px 0 0;
+        overflow: auto;
+        padding-bottom: 20px;
+    }
+
+    .bookImage{
+        float: left;
+        max-width: 20%;
+        height: auto;
+    }
+
+    .topContent{
+        margin-left: 100px;
+    }
+
+    .name{
+        font-weight: bold;
+        font-size: 200%;
+    }
+
+    ion-card-header.panel.dark{    
+        background-color: map-get($map: $colors, $key: dark);
+        color: map-get($map: $colors, $key: light);
+    }
+
+    // .col{
+    //     border: solid 1px grey;
+    //     border-bottom-style: none;
+    //     border-right-style: none;
+    // }
+
+    .row.title{
+        background-color: #549CCE;
+        font-weight: bold;
+    }
+
+    .row.content{
+        text-align: right;
+
+    }
+    .row.empty{
+        padding-bottom: 20px;
+    }
+
+    // .col:last-child {
+    //     border-right: solid 1px grey;
+    //   }
+      
+    //   .row:last-child .col {
+    //     border-bottom: solid 1px grey;
+    //   }
+}

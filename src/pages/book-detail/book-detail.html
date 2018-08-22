@@ -1,0 +1,72 @@
+<!--
+  Generated template for the BookDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{book.name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="header">
+    <div class="bookImage"><img src="http://2.bp.blogspot.com/-5_ys7I7USBo/T4MwCREbX7I/AAAAAAAAA5A/sUIrq8YIrG4/s1600/a-game-of-thrones.jpg"
+      /></div>
+    <div class="topContent">
+      <h3 class="name">{{book.name}}</h3>
+      <p>Written by <span *ngFor="let auth of book.authors">{{auth}} </span></p>
+      <p>{{book.released | date}}</p>
+    </div>
+  </div>
+
+  <!-- <ion-card>
+    <ion-card-header class="panel dark">
+      First Released
+    </ion-card-header>
+    <ion-card-content>
+      {{book.country}}
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="panel blue">
+      Number Of Pages
+    </ion-card-header>
+    <ion-card-content>
+      {{book.numberOfPages}}
+    </ion-card-content>
+  </ion-card> -->
+
+  <ion-content>
+    <div class="row-group">
+      <div class="row title">
+        <div class="col">First Release</div>
+
+      </div>
+      <div class="row content">
+        <div class="col">{{book.country}}</div>
+      </div>
+      <div class="row empty"></div>
+    </div>
+
+    <div class="row-group">
+      <div class="row title">
+        <div class="col">Number Of Pages</div>
+
+      </div>
+      <div class="row content">
+        <div class="col">{{book.numberOfPages}}</div>
+      </div>
+      <div class="row empty"></div>
+    </div>
+
+  </ion-content>
+
+
+</ion-content>
